@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, text, p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body, html{
+    height: 100%;
+    background-color:#33333A;
+    overflow-x: hidden;
+}
+
+
+.PageHeader {
+    height: 400px;
+    margin-top:61px;
+    background-image: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
+    background-position: center;
+    background-size:cover;
+}
+.HeaderMContent {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align:center;
+}
+
+#HeaderText{
+    background-color:#fff;
+    color:black;
+    mix-blend-mode: screen;
+    font-size: 16vw;
+    transform:skewX(7deg);
+    
+    
+}
+
+.InfoBar{
+    background-color:#1e1e1eaa;
+    position:fixed;
+    width:100%;
+    overflow: hidden;
+    top: 0;
+    z-index: 92104;
+    box-shadow: 0 15px 30px black;
+    backdrop-filter: blur(12px);
+}
+.InfoBarContent{
+    display:flex;
+    justify-content:center;
+}
+.InfoBarContent li{
+    display:inline;
+}
+.InfoBarContent a{
+    display:inline-block;
+    cursor:pointer;
+    padding: 16px 32px;
+    background: #ef3232;;
+    transform:skewX(7deg);
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:0;
+    font-size:24px;
+}
+.InfoBarContent a:hover{
+    background: #ffffff;
+    color:#ef3232;
+    transition-duration:300ms;
+}
+.InfoBarStripes1{
+    background-color:#ff9a60;
+    position: fixed;
+    z-index:111005;
+    width:24vw;
+    height:61px;
+    transform:skewX(7deg);
+    left:-16px;
+}
+.InfoBarStripes2{
+    background-color:#f2ff43;
+    position: fixed;
+    z-index:111005;
+    width:6vw;
+    height:61px;
+    transform:skewX(7deg);
+    left:16px;
+}
+.InfoBarStripes3{
+    background-color:#f2ff43;
+    position: fixed;
+    z-index:111005;
+    width:2vh;
+    height:61px;
+    transform:skewX(7deg);
+    left:128px;
+}
+
+.InfoCards{
+    
+}
+.InfoBlock{
+    margin:24px auto;
+    padding:24px;
+    background-color:white;
+    width:85%;
+}
+.InfoBlock #InfoAboutMe{
+    text-align:center;
+    font-size:3em;
+}
