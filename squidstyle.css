@@ -33,7 +33,7 @@ body, html{
     color:black;
     mix-blend-mode: screen;
     font-size: 16vw;
-    transform:skewX(7deg);
+    transform:skewX(-7deg);
     
     
 }
@@ -59,16 +59,17 @@ body, html{
     display:inline-block;
     cursor:pointer;
     padding: 16px 32px;
-    background: #ef3232;;
-    transform:skewX(7deg);
+    background: #e25c5c;;
+    text-shadow: 2px 2px #1e1e1e55;
+    transform:skewX(-7deg);
     color:white;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Bebas Neue', cursive;
     font-weight:0;
     font-size:24px;
 }
 .InfoBarContent a:hover{
     background: #ffffff;
-    color:#ef3232;
+    color:#e25c5c;
     transition-duration:300ms;
 }
 .InfoBarStripes1{
@@ -77,7 +78,7 @@ body, html{
     z-index:111005;
     width:24vw;
     height:61px;
-    transform:skewX(7deg);
+    transform:skewX(-7deg);
     left:-16px;
 }
 .InfoBarStripes2{
@@ -86,7 +87,7 @@ body, html{
     z-index:111005;
     width:6vw;
     height:61px;
-    transform:skewX(7deg);
+    transform:skewX(-7deg);
     left:16px;
 }
 .InfoBarStripes3{
@@ -95,7 +96,7 @@ body, html{
     z-index:111005;
     width:2vh;
     height:61px;
-    transform:skewX(7deg);
+    transform:skewX(-7deg);
     left:128px;
 }
 
@@ -103,12 +104,55 @@ body, html{
     
 }
 .InfoBlock{
+    width:90%;
     margin:24px auto;
-    padding:24px;
-    background-color:white;
-    width:85%;
+    margin-bottom:48px;
 }
-.InfoBlock #InfoAboutMe{
+.InfoBlockContent{
+    background-color:white;
+    box-shadow: 0 15px 30px black;
+    width:90%;
+    margin:0px auto;
+    padding:24px;
+}
+
+/* .InfoBlockStripe1 {
+    background-color:#2db2ff;
+    width:12px;
+    height:64px;
+} */
+
+.InfoBlock p{
     text-align:center;
+    font-size:1.5em;
+}
+.InfoBlock h1{
+    background-color:#e25c5c;
+    text-align:left;
+    font-family: 'Bebas Neue', cursive;
+    font-weight:1;
+    color:yellow;
+    text-shadow: 4px 4px #1e1e1e55;
+    transform:skewX(-7deg);
     font-size:3em;
+    padding-left:16px;
+    box-shadow: 0 2px 30px black;
+}
+.SocialButtonsContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    gap: 15px;
+}
+.SocialButton{
+    background-color:#33333A;
+    color:white;
+    font-size:3em;
+    width:96px;
+    padding: 20.3333px 0;
+    text-align:center;
+    transform:skewX(-7deg);
+}
+.SocialButton i{
+    transform:skewX(7deg);
 }
