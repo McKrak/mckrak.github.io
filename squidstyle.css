@@ -24,15 +24,14 @@ body, html{
 }
 .HeaderMContent {
     padding-top: 80px;
-    padding-bottom: 40px;
     text-align:center;
 }
 
 #HeaderText{
     background-color:#fff;
-    color:black;
+    font-family: 'Bebas Neue';
     mix-blend-mode: screen;
-    font-size: 16vw;
+    font-size: 12vw;
     transform:skewX(-7deg);
 }
 
@@ -126,4 +125,19 @@ body, html{
 }
 .SocialButton i{
     transform:skewX(7deg);
+}
+
+.SocialButton:hover{
+    background-color:magenta;
+    text-shadow: 4px 4px #1e1e1e55;
+    box-shadow: 8px 8px aqua;
+    transition-duration:250ms;
+}
+.SocialButton:active{
+    background-color:yellow;
+    color:black;
+    text-shadow: none;
+    box-shadow: none;
+    transition-duration:250ms;
+
 }
