@@ -9,9 +9,8 @@ h1, h2, h3, h4, h5, text, p{
 }
 
 body, html{
-    height: 100%;
     background-color:#33333A;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 
@@ -139,5 +138,11 @@ body, html{
     text-shadow: none;
     box-shadow: none;
     transition-duration:250ms;
-
+}
+.WorkCards{
+   margin:48px;
+}
+.WorksList img{
+    width:400px;
+    height:200px;
 }
