@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, text, p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+ul{
+    list-style-type:none;
+}
+
 body, html{
     background-color:#33333A;
     overflow-x:hidden;
@@ -59,7 +63,7 @@ body, html{
     text-shadow: 2px 2px #1e1e1e55;
     transform:skewX(-7deg);
     color:white;
-    font-family:'Bebas Neue', sans-serif;
+    font-family:'Bebas Neue', cursive;
     font-weight:0;
     font-size:32px;
 }
@@ -98,7 +102,7 @@ body, html{
 .InfoBlock h1{
     background-color:#e25c5c;
     text-align:left;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-weight:1;
     color:yellow;
     text-shadow: 4px 4px #1e1e1e55;
@@ -121,12 +125,14 @@ body, html{
     padding: 20.3333px 0;
     text-align:center;
     transform:skewX(-7deg);
+    transition-duration:250ms;
 }
 .SocialButton i{
     transform:skewX(7deg);
 }
 
 .SocialButton:hover{
+    transform:skewX(-7deg) translate(-4px, -4px);
     background-color:magenta;
     text-shadow: 4px 4px #1e1e1e55;
     box-shadow: 8px 8px aqua;
@@ -139,7 +145,39 @@ body, html{
     box-shadow: none;
     transition-duration:250ms;
 }
-.WorkCards{
+
+.WorkCardsContainer{
+    margin:48px;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 32px;
+}
+
+.WorkCard{
+    display:block;
+    background-color: #000;
+    background-repeat:no-repeat;
+    margin:8px;
+    width: 400px;
+    height: 200px;
+}
+
+.WorkCardContent h2, h3, li{
+    font-family:'Bebas Neue', sans-serif
+}
+
+.WorkCardContent h2{
+    text-shadow: 4px 4px purple;
+    color:white;
+    font-size: 2em;
+}
+
+.WorkCardContent{
+    padding:8px;
+}
+
+
+/* .WorkCards{
    margin:48px;
 }
 .WorksList{
@@ -157,21 +195,37 @@ body, html{
     box-shadow: inset -450px -100px 50px -200px #000;
     border-style:solid;
     border-width:8px;
+    border-color:#e25c5c;
 }
-.WorksList h2, h3, p{
+.WorksList{
     color:white;
-    font-family:'Bebas Neue', sans-serif;
+    font-family:'Bebas Neue', cursive;
     text-align:right;
     margin-right:10px;
 }
 .WorksList h2{
     font-size:3em;
+    text-shadow: 4px 4px 0 purple;
     margin-bottom:-8px;
 }
 .WorksList h3{
     font-size:2em;
-}
-.WorksList p{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+.GalleryContainer{
+    margin:32px auto;
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 
+}
+.GalleryContainer img{
+    margin:8px;
+    height:150px;
+    transition-duration:250ms;
+}
+.GalleryContainer img:hover{
+    transform:translate(-4px,-4px);
+    box-shadow: 8px 8px 0 black;
+    transition-duration:250ms;
 }
