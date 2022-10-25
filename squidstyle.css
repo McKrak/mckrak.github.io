@@ -31,9 +31,11 @@ body, html{
 }
 
 #HeaderText{
-    background-color:#fff;
+    background-color:#ffffff;
     font-family: 'Bebas Neue';
     mix-blend-mode: screen;
+    color:#17176d;
+    text-shadow:8px 8px #79a1a1;
     font-size: 12vw;
     transform:skewX(-7deg);
 }
@@ -150,29 +152,43 @@ body, html{
     margin:48px;
     display:flex;
     flex-wrap:wrap;
+    justify-content: center;
     gap: 32px;
 }
 
 .WorkCard{
     display:block;
-    background-color: #000;
+    background-color: #ddd;
     background-repeat:no-repeat;
     margin:8px;
     width: 400px;
     height: 200px;
 }
 
+.FadeOverlay{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, 
+                rgba(0,0,0,0) 50%,
+                rgba(0,0,0,1) 75%
+    );
+}
+
 .WorkCardContent h2, h3, li{
-    font-family:'Bebas Neue', sans-serif
+    font-family:'Bebas Neue', sans-serif;
+    font-weight: 1;
+    color:white;
+    text-align:right;
 }
 
 .WorkCardContent h2{
-    text-shadow: 4px 4px purple;
-    color:white;
     font-size: 2em;
 }
 
 .WorkCardContent{
+    position:relative;
+    left: 0px;
+    bottom: 200px;
     padding:8px;
 }
 

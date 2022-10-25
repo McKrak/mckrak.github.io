@@ -1,3 +1,12 @@
 #WorkKamek{
     background-image:url('resources/WORKamek.png');
 }
+#WorkKamek h2{
+    text-shadow: 4px 4px purple;
+}
+#WorkRHS{
+    background-image:url('resources/WorkRHS.gif');
+}
+#WorkRHS h2{
+    text-shadow: 4px 4px magenta;
+}
