@@ -10,3 +10,9 @@
 #WorkRHS h2{
     text-shadow: 4px 4px magenta;
 }
+#WorkMvL{
+    background-image:url('resources/WorkMvL.gif');
+}
+#WorkMvL h2{
+    text-shadow: 4px 4px black;
+}
