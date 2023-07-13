@@ -2,42 +2,72 @@
     margin:0;
     padding: 0;
     user-select: none;
+    image-rendering:initial;
 }
 
-h1, h2, h3, h4, h5, text, p{
+/* h1, h2, h3, h4, h5, text, p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+} */
 
 ul{
     list-style-type:none;
 }
 
 body, html{
-    background-color:#33333A;
-    overflow-x:hidden;
+    background-color:#ffffff;
+    background-image: url(/res/bggrid.png),linear-gradient(to bottom,black, rgb(0, 204, 255),rgb(223, 80, 134));
+    background-blend-mode: hard-light, normal;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position-y: bottom;
+    background-attachment:scroll,fixed;
+}
+
+body{
+    margin:57px 0 0 0;
 }
 
 
 .PageHeader {
-    height: 400px;
-    margin-top:58px;
-    background-image: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    margin-top:0px;
+    /* background-image: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
     background-position: center;
-    background-size:cover;
+    background-size:cover; */
 }
 .HeaderMContent {
-    padding-top: 80px;
-    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode:screen;
+    width:100%;
 }
 
-#HeaderText{
-    background-color:#ffffff;
+
+.HeaderText {
     font-family: 'Bebas Neue';
-    mix-blend-mode: screen;
-    color:#17176d;
-    text-shadow:8px 8px #79a1a1;
-    font-size: 12vw;
+    color:#cacaca;
+    
+    /* background: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
+    background-size:cover;
+    background-position-x:center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000007e; */
+    text-align:center;
+    text-shadow: 4px 4px #929292;
     transform:skewX(-7deg);
+}
+#HTName{
+    font-size: 8em;
+}
+#HTSub{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
 }
 
 .InfoBar{
@@ -61,13 +91,14 @@ body, html{
     display:inline-block;
     cursor:pointer;
     padding: 8px 32px;
-    background: #e25c5c;;
+    background: #4ab7ff;
     text-shadow: 2px 2px #1e1e1e55;
     transform:skewX(-7deg);
     color:white;
     font-family:'Bebas Neue', cursive;
     font-weight:0;
     font-size:32px;
+    text-decoration: none;
 }
 .InfoBarContent a:hover{
     background: #ffffff;
@@ -79,7 +110,8 @@ body, html{
     
 }
 .InfoBlock{
-    width:90%;
+    width:75%;
+    max-width:1000px;
     margin:24px auto;
     margin-bottom:48px;
 }
@@ -102,16 +134,20 @@ body, html{
     font-size:1.5em;
 }
 .InfoBlock h1{
-    background-color:#e25c5c;
+    position:relative;
+    top:10px;
+    right:8px;
+    background-color:#6554ff;
     text-align:left;
+    width:fit-content;
     font-family: 'Bebas Neue', cursive;
     font-weight:1;
     color:yellow;
     text-shadow: 4px 4px #1e1e1e55;
     transform:skewX(-7deg);
     font-size:3em;
-    padding-left:16px;
-    box-shadow: 0 2px 30px black;
+    padding:0 20px 0 16px;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.432);
 }
 .SocialButtonsContainer{
     display: flex;
@@ -244,7 +280,7 @@ body, html{
 }
 .GalleryContainer img{
     margin:8px;
-    height:150px;
+    height:300px;
     transition-duration:250ms;
 }
 .GalleryContainer img:hover{
