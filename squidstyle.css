@@ -14,12 +14,12 @@ ul{
 
 body, html{
     background-color:#ffffff;
-    background-image: url(/res/bggrid.png),linear-gradient(to bottom,black, rgb(0, 204, 255),rgb(223, 80, 134));
-    background-blend-mode: hard-light, normal;
+    background-image: url(/res/bggrid.png),linear-gradient(to top,rgb(190, 208, 212), rgb(0, 204, 255),rgb(223, 80, 134));
+    background-blend-mode: soft-light, normal;
     background-repeat: repeat-x;
     background-size: auto;
     background-position-y: bottom;
-    background-attachment:scroll,fixed;
+    background-attachment:fixed,fixed;
 }
 
 body{

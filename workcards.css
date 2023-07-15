@@ -16,3 +16,16 @@
 #WorkMvL h2{
     text-shadow: 4px 4px black;
 }
+#WorkTT{
+    background-image:url('res/WORKTipTower.gif');
+}
+#WorkTT h2{
+    text-shadow: 4px 4px #19a3ff;
+}
+#WorkSI{
+    background-image:url('res/WorkSI.png');
+    background-size:cover;
+}
+#WorkSI h2{
+    text-shadow: 4px 4px #2e2320;
+}
