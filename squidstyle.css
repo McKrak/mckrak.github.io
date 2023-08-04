@@ -62,11 +62,12 @@ body{
     transform:skewX(-7deg);
 }
 #HTName{
-    font-size: 8em;
+    font-size: 10em;
 }
 #HTSub{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2em;
+    padding-bottom:8px;
 }
 
 .InfoBar{
@@ -89,7 +90,7 @@ body{
 .InfoBarContent a{
     display:inline-block;
     cursor:pointer;
-    padding: 8px 32px;
+    padding: 8px 2vw;
     background: #6554ff;
     text-shadow: 2px 2px #1e1e1e55;
     transform:skewX(-7deg);
@@ -154,9 +155,25 @@ body{
     padding:0 20px 0 16px;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.432);
 }
+.SectionHeader {
+    position:relative;
+    background-color:#6554ff;
+    text-align:left;
+    width:fit-content;
+    font-family: 'Bebas Neue', cursive;
+    font-weight:1;
+    color:yellow;
+    text-shadow: 4px 4px #1e1e1e55;
+    transform:skewX(-7deg);
+    font-size:3em;
+    margin: 0px 0px 0px 20px;
+    padding:0 20px 0 16px;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.432);
+}
 .SocialButtonsContainer{
     display: flex;
     flex-direction:row;
+    flex-wrap:wrap;
     justify-content:center;
     gap: 15px;
 }
@@ -181,6 +198,18 @@ body{
     box-shadow: 8px 8px aqua;
     transition-duration:250ms;
 }
+
+.SocialButton svg {
+    width:48px; 
+    user-select:none; 
+}
+#SoNewG img {
+    width:48px; 
+    user-select:none; 
+    filter:invert(100%);
+}
+
+
 .SocialButton:active{
     background-color:yellow;
     color:black;
@@ -383,5 +412,12 @@ body{
   @media only screen and (max-width: 700px){
     .ModalCard {
       width: 100%;
+    }
+    .InfoBlock h1{
+        font-size:2em;
+
+    }
+    #HTName{
+        font-size: 6em;
     }
   }

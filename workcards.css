@@ -29,3 +29,10 @@
 #WorkSI h2{
     text-shadow: 4px 4px #2e2320;
 }
+#WorkMystery{
+    background-image:url('res/WorkMystery.png');
+    background-size:cover;
+}
+#WorkMystery h2{
+    text-shadow: 4px 4px #1b1b1b;
+}
