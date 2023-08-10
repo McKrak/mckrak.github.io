@@ -202,11 +202,13 @@ body{
 .SocialButton svg {
     width:48px; 
     user-select:none; 
+    transform:skewX(7deg);
 }
 #SoNewG img {
     width:48px; 
     user-select:none; 
     filter:invert(100%);
+    transform:skewX(7deg);
 }
 
 
