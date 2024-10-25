@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Slice;
+    src: url(res/font/tricks.ttf);
+}
+
+:root {
+    --accent: #6554ff;
+    --bg-color: #231F20 ;
+    --button: #33333A;
+    --global-radius: 12px;
+}
+
+
+
 *{
     margin:0;
     padding: 0;
@@ -12,18 +26,41 @@ ul{
     list-style-type:none;
 }
 
-body, html{
-    background-color:#ffffff;
-    background-image: url(/res/bggrid.png),linear-gradient(to top,rgb(190, 208, 212), rgb(0, 204, 255),rgb(223, 80, 134));
-    background-blend-mode: soft-light, normal;
-    background-repeat: repeat-x;
-    background-size: auto;
-    background-position-y: bottom;
-    background-attachment:fixed,fixed;
+html {
+    background: var(--bg-color);
 }
 
-body{
-    margin:57px 0 0 0;
+.ContentGrid::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    background: 
+    linear-gradient(45deg in hsl longer hue, rgba(255, 255, 180, 0.489), rgba(255, 255, 180, 0.489)) fixed;
+    mask-image: url('res/layout/bggrid.svg');
+    mask-size: 50%;
+    position:absolute;
+}
+.ContentGrid {
+    z-index: 0;
+    position:relative;
+    margin: 64px 0px 0px 0px;
+    padding: 0px;
+    display:grid;
+    gap:0px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(16, 1fr);
+    /* grid-template-rows: repeat(auto-fill, 78px); */
+    width: 100%;
+}
+
+.ContentStack {
+    grid-column: 3/15;
+    display: flex;
+    flex-direction:column;
 }
 
 
@@ -31,38 +68,27 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
     height: 20em;
     margin-top:0px;
     /* background-image: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
     background-position: center;
     background-size:cover; */
 }
-.HeaderMContent {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    background-color: rgb(255, 255, 255);
-    mix-blend-mode:screen;
-    width:100%;
-}
 
 
 .HeaderText {
     font-family: 'Bebas Neue';
-    color:#000000;
-    line-height:1em;
+    color:#FFFFFF;
     /* background: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
     background-size:cover;
     background-position-x:center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: #0000007e; */
-    text-align:center;
-    text-shadow: 4px 4px #929292;
-    transform:skewX(-7deg);
 }
 #HTName{
-    font-size: 10em;
+    font-family: 'Slice';
+    font-size: 5em;
 }
 #HTSub{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -70,19 +96,20 @@ body{
     padding-bottom:8px;
 }
 
-.InfoBar{
-    background-color:#1e1e1eaa;
+nav {
+    background-color: var(--bg-color);
     position:fixed;
     width:100%;
-    overflow: hidden;
+    height: 64px;
     top: 0;
     z-index: 1;
-    box-shadow: 0 15px 30px black;
-    backdrop-filter: blur(12px);
 }
 .InfoBarContent{
     display:flex;
+    height: 100%;
+    align-items: center;
     justify-content:center;
+    
 }
 .InfoBarContent li{
     display:inline;
@@ -91,24 +118,22 @@ body{
     display:inline-block;
     cursor:pointer;
     padding: 8px 2vw;
-    background: #6554ff;
-    text-shadow: 2px 2px #1e1e1e55;
-    transform:skewX(-7deg);
-    color:white;
+    border-radius: var(--global-radius);
+    color:#231F20;
     font-family:'Bebas Neue', cursive;
     font-weight:0;
     font-size:32px;
     text-decoration: none;
+    transition-duration: 150ms;
 }
 .InfoBarContent a:hover{
-    background: #ffffff;
-    color:#6554ff;
+    outline: var(--accent) solid 3px;
+    color: var(--accent);
     transition-duration:300ms;
 }
 .InfoBarContent a:active{
-    background: #abb5c4;
-    color:rgb(113, 72, 209);
-    padding-bottom:2px;
+    background: #b3b5ba;
+    padding:6px;
     transition-duration:300ms;
 }
 
@@ -116,17 +141,10 @@ body{
     
 }
 .InfoBlock{
-    width:75%;
-    max-width:1000px;
+    width:100%;
+    max-width:3000px;
     margin:24px auto;
     margin-bottom:48px;
-}
-.InfoBlockContent{
-    background-color:white;
-    box-shadow: 0 15px 30px black;
-    width:90%;
-    margin:0px auto;
-    padding:24px;
 }
 
 /* .InfoBlockStripe1 {
@@ -140,24 +158,27 @@ body{
     font-size:1.5em;
 }
 .InfoBlock h1{
-    position:relative;
-    top:10px;
-    right:8px;
-    background-color:#6554ff;
+    background-color:var(--bg-color);
+    border-radius: 12px 12px 0px 0px;
     text-align:left;
     width:fit-content;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', arial;
     font-weight:1;
-    color:yellow;
-    text-shadow: 4px 4px #1e1e1e55;
-    transform:skewX(-7deg);
+    color:var(--accent);
     font-size:3em;
-    padding:0 20px 0 16px;
-    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.432);
+    padding: 16px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.432);
 }
+.InfoBlockContent{
+    background-color:var(--bg-color);
+    border-radius: 0px 12px 12px 12px;
+    margin:0px auto;
+    padding:24px;
+}
+
 .SectionHeader {
     position:relative;
-    background-color:#6554ff;
+    background-color:#ffffff;
     text-align:left;
     width:fit-content;
     font-family: 'Bebas Neue', cursive;
@@ -178,21 +199,18 @@ body{
     gap: 15px;
 }
 .SocialButton{
-    background-color:#33333A;
+    background-color:var(--button);
     color:white;
     font-size:3em;
     width:96px;
+    border-radius: var(--global-radius);
     padding: 20.3333px 0;
     text-align:center;
-    transform:skewX(-7deg);
-    transition-duration:250ms;
-}
-.SocialButton i{
-    transform:skewX(7deg);
+    transition-duration:100ms;
 }
 
 .SocialButton:hover{
-    transform:skewX(-7deg) translate(-4px, -4px);
+    transform:skewX(-7deg) skewY(2deg) translate(-4px, -4px);
     background-color:magenta;
     text-shadow: 4px 4px #1e1e1e55;
     box-shadow: 8px 8px aqua;
@@ -202,13 +220,11 @@ body{
 .SocialButton svg {
     width:48px; 
     user-select:none; 
-    transform:skewX(7deg);
 }
 #SoNewG img {
     width:48px; 
     user-select:none; 
     filter:invert(100%);
-    transform:skewX(7deg);
 }
 
 
@@ -256,7 +272,7 @@ body{
 .WorkCardContent h2, h3, li{
     font-family:'Bebas Neue', sans-serif;
     font-weight: 1;
-    color:white;
+    color:var(--bg-color);
     text-align:right;
 }
 
@@ -321,14 +337,15 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .GalleryCard img{
-    max-height:200px;
+    max-height:160px;
     width:100%;
     transition-duration:250ms;
+    border-radius: var(--global-radius);
 }
 
 .GalleryCard img:hover{
-    transform:translate(-4px,-4px);
-    box-shadow: 8px 8px 0 black;
+    /* transform:translate(-4px,-4px); */
+    outline: var(--accent) solid 4px;
     transition-duration:250ms;
     cursor:pointer;
 }
@@ -345,17 +362,16 @@ body{
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.9); 
   }
   
   /* Modal Content */
   .ModalCard {
-    background-color:rgb(37, 37, 37);
+    background-color:rgb(255, 255, 255);
+    border-radius: var(--global-radius);
     margin: auto;
     display: block;
     width: 80%;
-    box-shadow: 0 15px 30px black;
   }
 
   .ModalContent{
@@ -365,13 +381,13 @@ body{
     flex-direction:column;
   }
 
-  #ModalImg {
+  .ModalImg {
     width:fit-content;
     max-width:100%;
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #ModalSub {
+  .ModalSub {
     margin: auto;
     display: block;
     text-align: center;
@@ -382,18 +398,25 @@ body{
   }
   
   /* Add Animation - Zoom in the Modal */
-  .ModalCard, #ModalClose, #ModalSub {
+  .ModalCard, .ModalClose, .ModalSub {
     animation-name: zoom;
     animation-duration: 0.2s;
   }
   
   @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform:scale(0.8);
+        opacity:0;
+        
+    }
+    to {
+        transform:scale(1);
+        opacity:1;
+    }
   }
   
   /* The Close Button */
-  #ModalClose {
+  .ModalClose {
     position: fixed;
     top: 15px;
     right: 35px;
@@ -403,8 +426,8 @@ body{
     transition: 0.2s;
   }
   
-  #ModalClose:hover,
-  #ModalClose:focus {
+  .ModalClose:hover,
+  .ModalClose:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;

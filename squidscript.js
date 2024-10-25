@@ -4,9 +4,9 @@ var body = document.querySelector("body");
 
 // Get the image container and the image element within it
 var modalCard = document.querySelector(".ModalCard");
-var modalImage = document.getElementById("ModalImg");
-var modalSubtitle = document.getElementById("ModalSub")
-var modalClose = document.getElementById("ModalClose")
+var modalImage = document.querySelector(".ModalImg");
+var modalSubtitle = document.querySelector(".ModalSub");
+var modalClose = document.querySelector(".ModalClose");
 
 // Get all the thumbnail images
 var thumbnailImages = document.querySelectorAll(".GalleryCardImage");
