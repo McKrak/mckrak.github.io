@@ -1,0 +1,148 @@
+{
+    "OCD": [
+        {
+            "name": "Kraken",
+            "src": "KrakenRef.png",
+            "desc": "Kraken's Reference."
+        },
+        {
+            "name": "Inkblot",
+            "src": "InkblotRef.png",
+            "desc": "Inkblot's Reference."
+        },
+        {
+            "name": "Kraken",
+            "src": "CarreinaRef.png",
+            "desc": "Carréina's Reference."
+        },
+        {
+            "name": "Octaryu",
+            "src": "OctaryuRef.png",
+            "desc": "Octaryu's Reference."
+        },
+        {
+            "name": "Sy",
+            "src": "AF2023.png",
+            "desc": "Sy's Reference."
+        },
+        {
+            "name": "Sy Sprite",
+            "src": "Sprite-0002.png",
+            "desc": "Sy Sprite"
+        },
+        {
+            "name": "Florous",
+            "src": "Florous.png",
+            "desc": "Florous's Reference."
+        },
+        {
+            "name": "Shadow Wizard",
+            "src": "wizardmoney.png",
+            "desc": "Shadow Wizard Money Gang"
+        }
+    ],
+    "SPA": [
+        {
+            "name": "Alpha's Wanderless Stroll",
+            "src": "Alphastroll-V3.gif",
+            "desc": "Character: Alpha (@Agrimmora)"
+        },
+        {
+            "name": "Skating Sye",
+            "src": "SkateSye.gif",
+            "desc": "Character: Sye (@HeySye)"
+        },
+        {
+            "name": "Never EVER Steal Hip-Top's Lightbulbs!",
+            "src": "lightbulbs.gif",
+            "desc": "Characters: Hip-Top and Ian (@FunkySpaceAlien)"
+        },
+        {
+            "name": "Dust Bunny Dust-Up!",
+            "src": "dustbun.gif",
+            "desc": "Character: Dustbun (@Agrimmora)"
+        },
+        {
+            "name": "Fateful Enocunter with Poplin",
+            "src": "Poplin.gif",
+            "desc": "Characters: Poplin and Zack (@GalaxyPixies45)"
+        },
+        {
+            "name": "Hip Dee 'n Bee",
+            "src": "extrahipdeetopbee.gif",
+            "desc": "Characters: Dee n' Bee & Hip-Top (@FunkySpaceAlien)"
+        },
+        {
+            "name": "Clothesline Catch",
+            "src": "Clothesline.gif",
+            "desc": "Character: Eyebrawler (@Neweegee)"
+        },
+        {
+            "name": "Trapped with the Mushrooms",
+            "src": "Sprite-0001.gif",
+            "desc": "Character: Sho (@LemmyKirby)"
+        }
+    ],
+    "FAW": [
+        {
+            "name": "Kicks and Giggles",
+            "src": "Sprite-0005.png",
+            "desc": "Characters: Cotton (@Neweegee)\nEl Kaiju (@FunkySpaceAlien)"
+        },
+        {
+            "name": "Safari",
+            "src": "Sprite-0003.png",
+            "desc": "Characters: Safari (@EXTRARARE)"
+        },
+        {
+            "name": "Cassette Beasts Collections 1-3",
+            "src": "cb12.png",
+            "desc": "Cassette Beasts\n\n©️ Bytten Studio ©️ Raw Fury"
+        },
+        {
+            "name": "You're the Bomb!",
+            "src": "ClusterBuster3.png",
+            "desc": "Character: Cluster Buster (@GoldenDiossito)"
+        },
+        {
+            "name": "Colour your World!",
+            "src": "PlumePaint.png",
+            "desc": "Character: Plume (@Piranhartist)"
+        },
+        {
+            "name": "Rooftop Scamper",
+            "src": "Kunimitsuu.png",
+            "desc": "Character: Kunimitsu (@Mothdaze)"
+        },
+        {
+            "name": "Big Fan of Big Hands?",
+            "src": "BigHands.png",
+            "desc": "Anonymous Gift Art"
+        },
+        {
+            "name": "Who De-Framed Roger Rabbit?",
+            "src": "Roger.png",
+            "desc": "Character: Roger (@CINNA64)"
+        }
+    ],
+    "3DM": [
+        {
+            "name": "Takkasha",
+            "src_thumb": "takka_t.gif",
+            "src": "takka.gif",
+            "desc": "Takkasha belongs to Koolaruni"
+        },
+        {
+            "name": "Dolo",
+            "src_thumb": "dolo_t.gif",
+            "src": "dolo.gif",
+            "desc": "Character: Dolo (@ThatTugboat)"
+        },
+        {
+            "name": "Ozmi",
+            "src_thumb": "ozmi_t.gif",
+            "src": "ozmi.gif",
+            "desc": "Character: Ozmi (@funktoonmix)"
+        }
+    ]
+}

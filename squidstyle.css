@@ -4,11 +4,22 @@
 }
 
 :root {
-    --accent: #6554ff;
-    --bg-color: #231F20 ;
-    --button: #33333A;
+    --accent: #222128;
+    --bg-color: #231F20;
+    --trans-window: #231F20AA;
+    --trans-bg: #212121CC;
+    --button: #FEFEFE;
     --global-radius: 12px;
 }
+
+/* :root {
+    --accent: #222128;
+    --bg-color: #FFFFFF;
+    --trans-window: #FFFFFFAA;
+    --trans-bg: #212121CC;
+    --button: #33333A;
+    --global-radius: 12px;
+} */
 
 
 
@@ -362,16 +373,21 @@ nav {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgba(0,0,0,0.9); 
+    background-color: var(--trans-bg);
   }
   
   /* Modal Content */
   .ModalCard {
-    background-color:rgb(255, 255, 255);
+    background: radial-gradient(100% 100%,var(--trans-window) 40%,#FFFFFF00 100%);
+    /* background-color:var(--trans-window); */
+    border-style:solid;
+    border-color: var(--bg-color);
     border-radius: var(--global-radius);
     margin: auto;
     display: block;
     width: 80%;
+    max-height: 80%;
+    backdrop-filter:blur(8px);
   }
 
   .ModalContent{
@@ -382,8 +398,8 @@ nav {
   }
 
   .ModalImg {
-    width:fit-content;
-    max-width:100%;
+    max-height:50vmin;
+    filter:drop-shadow(0px 0px 2px var(--bg-color))
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -391,7 +407,7 @@ nav {
     margin: auto;
     display: block;
     text-align: center;
-    color: #ccc;
+    color: var(--button);
     font-size:large;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px 0;
