@@ -26,10 +26,16 @@ fetch("dat/portfolioDat.json")
           // Set modal image source to full res image.
           //modalImage.setAttribute("data-cat", gallerySection)
           modalImage.setAttribute("src", `res/gallery/${galleryCard.parent}/${galleryCard.src}`); 
+          if (galleryCard.pixelate == true) {
+            modalImage.style.imageRendering = "pixelated";
+          } else {
+            modalImage.style.imageRendering = "initial";
+          }
       
-          modalSubtitle.innerHTML = this.getAttribute("alt");  
-          modal.style.display = "flex"; // Display the modal
-          body.style.overflow = "hidden";
+          modalTitle.innerHTML = galleryCard.name;
+          modalSubtitle.innerHTML = galleryCard.desc;  
+          modal.style.display = "grid"; // Display the modal
+          //body.style.overflow = "hidden";
         });
   
         galleryCardDiv.appendChild(galleryCardImage);
@@ -60,6 +66,7 @@ var body = document.querySelector("body");
 // Get the image container and the image element within it
 var modalCard = document.querySelector(".ModalCard");
 var modalImage = document.querySelector(".ModalImg");
+var modalTitle = document.querySelector(".ModalTitle");
 var modalSubtitle = document.querySelector(".ModalSub");
 var modalClose = document.querySelector(".ModalClose");
 

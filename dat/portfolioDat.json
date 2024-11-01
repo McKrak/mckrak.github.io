@@ -3,126 +3,150 @@
         {
             "name": "Kraken",
             "src": "KrakenRef.png",
-            "desc": "Kraken's Reference."
+            "desc": "Kraken's Reference.",
+            "pixelate": true
         },
         {
             "name": "Inkblot",
             "src": "InkblotRef.png",
-            "desc": "Inkblot's Reference."
+            "desc": "Inkblot's Reference.",
+            "pixelate": true
         },
         {
             "name": "Kraken",
             "src": "CarreinaRef.png",
-            "desc": "Carréina's Reference."
+            "desc": "Carréina's Reference.",
+            "pixelate": true
         },
         {
             "name": "Octaryu",
             "src": "OctaryuRef.png",
-            "desc": "Octaryu's Reference."
+            "desc": "Octaryu's Reference.",
+            "pixelate": true
         },
         {
             "name": "Sy",
             "src": "AF2023.png",
-            "desc": "Sy's Reference."
+            "desc": "Sy's Reference.",
+            "pixelate": true
         },
         {
             "name": "Sy Sprite",
             "src": "Sprite-0002.png",
-            "desc": "Sy Sprite"
+            "desc": "Sy Sprite",
+            "pixelate": true
         },
         {
             "name": "Florous",
             "src": "Florous.png",
-            "desc": "Florous's Reference."
+            "desc": "Florous's Reference.",
+            "pixelate": true
         },
         {
             "name": "Shadow Wizard",
             "src": "wizardmoney.png",
-            "desc": "Shadow Wizard Money Gang"
+            "desc": "Shadow Wizard Money Gang",
+            "pixelate": true
         }
     ],
     "SPA": [
         {
             "name": "Alpha's Wanderless Stroll",
             "src": "Alphastroll-V3.gif",
-            "desc": "Character: Alpha (@Agrimmora)"
+            "desc": "Character: Alpha (@Agrimmora)",
+            "pixelate": true
         },
         {
             "name": "Skating Sye",
             "src": "SkateSye.gif",
-            "desc": "Character: Sye (@HeySye)"
+            "desc": "Character: Sye (@HeySye)",
+            "pixelate": true
         },
         {
             "name": "Never EVER Steal Hip-Top's Lightbulbs!",
             "src": "lightbulbs.gif",
-            "desc": "Characters: Hip-Top and Ian (@FunkySpaceAlien)"
+            "desc": "Characters: Hip-Top and Ian (@FunkySpaceAlien)",
+            "pixelate": true
         },
         {
             "name": "Dust Bunny Dust-Up!",
             "src": "dustbun.gif",
-            "desc": "Character: Dustbun (@Agrimmora)"
+            "desc": "Character: Dustbun (@Agrimmora)",
+            "pixelate": true
         },
         {
             "name": "Fateful Enocunter with Poplin",
             "src": "Poplin.gif",
-            "desc": "Characters: Poplin and Zack (@GalaxyPixies45)"
+            "desc": "Characters: Poplin and Zack (@GalaxyPixies45)",
+            "pixelate": true
         },
         {
             "name": "Hip Dee 'n Bee",
             "src": "extrahipdeetopbee.gif",
-            "desc": "Characters: Dee n' Bee & Hip-Top (@FunkySpaceAlien)"
+            "desc": "Characters: Dee n' Bee & Hip-Top (@FunkySpaceAlien)",
+            "pixelate": true
         },
         {
             "name": "Clothesline Catch",
             "src": "Clothesline.gif",
-            "desc": "Character: Eyebrawler (@Neweegee)"
+            "desc": "Character: Eyebrawler (@Neweegee)",
+            "pixelate": true
         },
         {
             "name": "Trapped with the Mushrooms",
             "src": "Sprite-0001.gif",
-            "desc": "Character: Sho (@LemmyKirby)"
+            "desc": "Character: Sho (@LemmyKirby)",
+            "pixelate": true
         }
     ],
     "FAW": [
         {
             "name": "Kicks and Giggles",
             "src": "Sprite-0005.png",
-            "desc": "Characters: Cotton (@Neweegee)\nEl Kaiju (@FunkySpaceAlien)"
+            "desc": "Characters: Cotton (@Neweegee)\nEl Kaiju (@FunkySpaceAlien)",
+            "pixelate": true
         },
         {
             "name": "Safari",
             "src": "Sprite-0003.png",
-            "desc": "Characters: Safari (@EXTRARARE)"
+            "desc": "Characters: Safari (@EXTRARARE)",
+            "pixelate": true
         },
         {
             "name": "Cassette Beasts Collections 1-3",
             "src": "cb12.png",
-            "desc": "Cassette Beasts\n\n©️ Bytten Studio ©️ Raw Fury"
+            "desc": "Cassette Beasts\n\n©️ Bytten Studio ©️ Raw Fury",
+            "pixelate": true
         },
         {
             "name": "You're the Bomb!",
             "src": "ClusterBuster3.png",
-            "desc": "Character: Cluster Buster (@GoldenDiossito)"
+            "desc": "Character: Cluster Buster (@GoldenDiossito)",
+            "pixelate": true
         },
         {
             "name": "Colour your World!",
             "src": "PlumePaint.png",
-            "desc": "Character: Plume (@Piranhartist)"
+            "desc": "Character: Plume (@Piranhartist)",
+            "pixelate": true
         },
         {
             "name": "Rooftop Scamper",
             "src": "Kunimitsuu.png",
-            "desc": "Character: Kunimitsu (@Mothdaze)"
+            "desc": "Character: Kunimitsu (@Mothdaze)",
+            "pixelate": true
         },
         {
             "name": "Big Fan of Big Hands?",
             "src": "BigHands.png",
-            "desc": "Anonymous Gift Art"
+            "desc": "Anonymous Gift Art",
+            "pixelate": true
         },
         {
             "name": "Who De-Framed Roger Rabbit?",
             "src": "Roger.png",
-            "desc": "Character: Roger (@CINNA64)"
+            "desc": "Character: Roger (@CINNA64)",
+            "pixelate": true
         }
     ],
     "3DM": [
