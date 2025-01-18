@@ -108,7 +108,7 @@ html {
 
 .HeaderText {
     font-family: 'Bebas Neue';
-    color:#FFFFFF;
+    color: var(--text);
     grid-column: 3/15;
     /* background: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
     background-size:cover;

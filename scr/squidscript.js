@@ -66,7 +66,7 @@ modal.addEventListener("click", function (event) {
   }
 });
 
-modal.addEventListener("click", function() {
+modalClose.addEventListener("click", function() {
   modal.style.display = "none"; // Hide the modal
   body.style.overflow = "initial";
 });

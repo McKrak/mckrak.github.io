@@ -49,6 +49,50 @@
             "pixelate": true
         }
     ],
+    "3DM": [
+        {
+            "name": "Takkasha",
+            "src_thumb": "takka_t.gif",
+            "src": "takka.gif",
+            "desc": "Takkasha belongs to Koolaruni"
+        },
+        {
+            "name": "Dolo",
+            "src_thumb": "dolo_t.gif",
+            "src": "dolo.gif",
+            "desc": "Character: Dolo (@ThatTugboat)"
+        },
+        {
+            "name": "Ozmi",
+            "src_thumb": "ozmi_t.gif",
+            "src": "ozmi.gif",
+            "desc": "Character: Ozmi (@funktoonmix)"
+        },
+        {
+            "name": "Kosmo",
+            "src_thumb": "kosmot.gif",
+            "src": "kosmo.gif",
+            "desc": "Character: Kosmo (@orchetrance)"
+        },
+        {
+            "name": "Olivia",
+            "src_thumb": "olivia_t.gif",
+            "src": "olivia.gif",
+            "desc": "Character: Olivia (@24hourssleeping)"
+        },
+        {
+            "name": "Snowdog",
+            "src_thumb": "snowdog_t.gif",
+            "src": "snowdog.gif",
+            "desc": "Character: Snowdog (@Neweegee)"
+        },
+        {
+            "name": "Rambunctious Individual",
+            "src_thumb": "rambunctious_t.png",
+            "src": "rambunctious.png",
+            "desc": "Character: Wolo ©️ Taito Corporation"
+        }
+    ],
     "SPA": [
         {
             "name": "Alpha's Wanderless Stroll",
@@ -183,26 +227,6 @@
             "src": "BIGMAN.png",
             "desc": "Character: Big Man (Splatoon™️ 3 ©️ Nintendo)",
             "pixelate": true
-        }
-    ],
-    "3DM": [
-        {
-            "name": "Takkasha",
-            "src_thumb": "takka_t.gif",
-            "src": "takka.gif",
-            "desc": "Takkasha belongs to Koolaruni"
-        },
-        {
-            "name": "Dolo",
-            "src_thumb": "dolo_t.gif",
-            "src": "dolo.gif",
-            "desc": "Character: Dolo (@ThatTugboat)"
-        },
-        {
-            "name": "Ozmi",
-            "src_thumb": "ozmi_t.gif",
-            "src": "ozmi.gif",
-            "desc": "Character: Ozmi (@funktoonmix)"
         }
     ]
 }
