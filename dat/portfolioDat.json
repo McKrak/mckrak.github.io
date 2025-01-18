@@ -13,7 +13,7 @@
             "pixelate": true
         },
         {
-            "name": "Kraken",
+            "name": "Carréina",
             "src": "CarreinaRef.png",
             "desc": "Carréina's Reference.",
             "pixelate": true
@@ -25,15 +25,15 @@
             "pixelate": true
         },
         {
-            "name": "Sy",
-            "src": "AF2023.png",
-            "desc": "Sy's Reference.",
+            "name": "Kraken Forms",
+            "src": "Sprite-0002.png",
+            "desc": "Kraken's Various Forms.",
             "pixelate": true
         },
         {
-            "name": "Sy Sprite",
-            "src": "Sprite-0002.png",
-            "desc": "Sy Sprite",
+            "name": "Sy",
+            "src": "AF2023.png",
+            "desc": "Sy's Reference",
             "pixelate": true
         },
         {
@@ -97,6 +97,30 @@
             "src": "Sprite-0001.gif",
             "desc": "Character: Sho (@LemmyKirby)",
             "pixelate": true
+        },
+        {
+            "name": "Necromancer Revives You",
+            "src": "Necromancer.gif",
+            "desc": "Character: Necromancer from You Died but a Necromancer revived you",
+            "pixelate": true
+        },
+        {
+            "name": "Snnoozin",
+            "src": "Snoooooze.gif",
+            "desc": "Character: Snooze by Charro64",
+            "pixelate": true
+        },
+        {
+            "name": "Makeship Promotional Animatic",
+            "src": "Plushseeker.gif",
+            "desc": "Promotional sprite animation for SightSeeker's official plush campaign run by Makeship.",
+            "pixelate": true
+        },
+        {
+            "name": "Kraken and Inkblot",
+            "src": "KrakenInkblot.gif",
+            "desc": "Kraken and Inkblot",
+            "pixelate": true
         }
     ],
     "FAW": [
@@ -116,7 +140,7 @@
             "name": "Cassette Beasts Collections 1-3",
             "src": "cb12.png",
             "desc": "Cassette Beasts\n\n©️ Bytten Studio ©️ Raw Fury",
-            "pixelate": true
+            "pixelate": false
         },
         {
             "name": "You're the Bomb!",
@@ -146,6 +170,18 @@
             "name": "Who De-Framed Roger Rabbit?",
             "src": "Roger.png",
             "desc": "Character: Roger (@CINNA64)",
+            "pixelate": true
+        },
+        {
+            "name": "Cold Cold Cold Cold",
+            "src": "Tetracold.png",
+            "desc": "Character: Millo (@Tetracold)",
+            "pixelate": true
+        },
+        {
+            "name": "I Like Big Man",
+            "src": "BIGMAN.png",
+            "desc": "Character: Big Man (Splatoon™️ 3 ©️ Nintendo)",
             "pixelate": true
         }
     ],

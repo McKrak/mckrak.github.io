@@ -1,9 +1,9 @@
 @font-face {
-    font-family: Robotica;
-    src: url(res/font/Robotica.ttf);
+    font-family: MotionControl;
+    src: url(res/font/MotionControl-BoldItalic.otf);
 }
 
-:root {
+/* :root {
     --accent: #573ee4;
     --bg-color: #231F20;
     --trans-window: #231F20AA;
@@ -12,9 +12,9 @@
     --global-radius: 12px;
     --text: #FEFEFE;
     --whitetext: #FFFFFF;
-}
+} */
 
-/* :root {
+:root {
     --accent: #573ee4;
     --bg-color: #FFFFFF;
     --trans-window: #FFFFFFAA;
@@ -23,7 +23,7 @@
     --text: #231F20;
     --global-radius: 12px;
     --whitetext: #FFFFFF;
-} */
+}
 
 
 
@@ -64,7 +64,6 @@ html {
 .ContentGrid {
     z-index: 0;
     position:relative;
-    margin: 64px 0px 0px 0px;
     padding: 0px;
     display:grid;
     gap:0px;
@@ -82,21 +81,35 @@ html {
 
 
 .PageHeader {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
+    display:grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(16, 1fr);
     height: 20em;
-    margin-top:0px;
+    align-items: center;
     /* background-image: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
     background-position: center;
     background-size:cover; */
 }
 
+.MainHeader {
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainHeaderContent {
+    min-height: 3vh;
+    max-height: 15vh;
+}
+
+
+
 
 .HeaderText {
     font-family: 'Bebas Neue';
     color:#FFFFFF;
+    grid-column: 3/15;
     /* background: url("https://img.ngfiles.com/page_banners/159000/banner-158338.png?1648318596");
     background-size:cover;
     background-position-x:center;
@@ -104,7 +117,7 @@ html {
     -webkit-text-fill-color: #0000007e; */
 }
 #HTName{
-    font-family: 'Robotica';
+    font-family: 'Bebas Neue';
     font-size: 5em;
 }
 #HTSub{
@@ -137,7 +150,7 @@ nav {
     padding: 8px 2vw;
     border-radius: var(--global-radius);
     color:var(--text);
-    font-family: Robotica, Arial;
+    font-family: Bebas Neue;
     font-weight:0;
     font-size:32px;
     text-decoration: none;
@@ -162,6 +175,7 @@ nav {
     max-width:3000px;
     margin:24px auto;
     margin-bottom:48px;
+    color: var(--text);
 }
 
 /* .InfoBlockStripe1 {
@@ -179,14 +193,14 @@ nav {
     border-radius: 12px 12px 0px 0px;
     text-align:left;
     width:fit-content;
-    font-family: Robotica, arial;
-    font-size:2em;
-    font-weight: lighter;
+    font-family: Bebas Neue, arial;
+    font-size:3em;
+    font-weight: 600;
     padding: 16px;
 
     color:var(--whitetext);
     -webkit-text-stroke: var(--accent) 4px;
-    text-shadow: var(--accent) 6px 6px 0px;
+    text-shadow: var(--accent) 0.1em 0.1em 0px;
     paint-order: stroke fill;
 
 }
@@ -225,12 +239,12 @@ nav {
 }
 .SocialButton{
     background-color:var(--button);
-    color:white;
-    font-size:3em;
     width:96px;
+    height:96px;
     border-radius: var(--global-radius);
-    padding: 20.3333px 0;
-    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition-duration:100ms;
 }
 
@@ -242,14 +256,9 @@ nav {
     transition-duration:250ms;
 }
 
-.SocialButton svg {
-    width:48px; 
-    user-select:none; 
-}
-#SoNewG img {
-    width:48px; 
-    user-select:none; 
-    filter:invert(100%);
+.SocialButton img {
+    filter: brightness(0) invert();
+    width:64px;
 }
 
 
@@ -418,7 +427,7 @@ nav {
   }
 
   .ModalTitle{
-    font-family: Robotica;
+    font-family: Bebas Neue;
     font-size: 4vb;
     color:var(--whitetext);
     font-weight: lighter;
@@ -433,7 +442,7 @@ nav {
     display: block;
     text-align: center;
     color: var(--button);
-    font-size:100%;
+    font-size:2vb;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px 0;
   }
